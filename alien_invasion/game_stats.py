@@ -7,6 +7,9 @@ class GameStats():
         self.reset_stats()
         # Игра Alien Invasion запускается в неактивном состоянии.
         self.game_active = False
+        # Рекорд не должен сбрасываться.
+        with open('F:\\Program\\pygame\\alien_invasion\\high_score.txt', 'r') as file:
+            self.high_score = int(file.readline())
 
     def reset_stats(self):
         """Инициализирует статистику, изменяющуюся в ходе игры."""
