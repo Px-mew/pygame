@@ -32,7 +32,7 @@ class Settings():
         """Инициализирует настройки, изменяющиеся в ходе игры."""
         self.ship_speed_factor = 1.5
         self.bullet_speed_factor = 1
-        self.alien_speed_factor = 0.5
+        self.alien_speed_factor = 0.3
         self.bullet_width = 3
         # Подсчет очков
         self.alien_points = 50
